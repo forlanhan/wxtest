@@ -12,6 +12,7 @@ Page({
       str:'字符串',
       num:11,
       bool:true,
+      arr:[1,2,3,'wx'],
       obj:{
         name:'胡瀚',
         age:36,
