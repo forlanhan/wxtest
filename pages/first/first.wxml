@@ -1,0 +1,5 @@
+<!--pages/first/first.wxml-->
+<view>这是一个小程序标签</view>
+<text>这是一段文字</text>
+<view class="block">这是块级</view>
+<text class="inline">这是内联</text>

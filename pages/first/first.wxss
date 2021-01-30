@@ -1,0 +1,15 @@
+/* pages/first/first.wxss */
+.block {
+  background:green;
+  height:100px;
+  /* display: inline; */ /* 转内联 */
+  display: inline-block;/* 行内块，不独享一行 */
+
+}
+
+.inline{
+  display: inline-block;
+  background:blue;
+  height: 100px;
+  width: 100px;
+}
