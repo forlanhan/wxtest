@@ -11,6 +11,7 @@ Page({
       //前端的数据类型：字符串、数字、布尔、null、对象类型等
       str:'字符串',
       num:11,
+      bool:true,
       obj:{
         name:'胡瀚',
         age:36,
