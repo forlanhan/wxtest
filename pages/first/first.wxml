@@ -9,3 +9,9 @@
 <view>对象:{{obj.name}}-{{obj.age}}-{{obj.sex}}</view>
 <!-- 可以使用wx:for遍历数据，item就是被遍历出来的一条条数据，index就是索引值（下标） -->
 <view wx:for="{{objarr}}">index:{{index}}-item:{{item.a}}</view>
+
+<!-- 遍历模拟后台给前端返回的数据 -->
+<view wx:for="{{video}}">
+      <!--用video标签显示视频  -->
+      <video src="{{item.video}}"></video>
+</view>
