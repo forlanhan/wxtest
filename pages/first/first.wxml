@@ -3,3 +3,7 @@
 <text>这是一段文字</text>
 <view class="block">这是块级</view>
 <text class="inline">这是内联</text>
+<view>展示:{{str}}</view>
+<view>数字:{{num}}</view>
+<view>数组:{{arr[0]}}</view>
+<view>对象:{{obj.name}}-{{obj.age}}-{{obj.sex}}</view>
