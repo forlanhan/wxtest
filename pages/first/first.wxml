@@ -7,3 +7,5 @@
 <view>数字:{{num}}</view>
 <view>数组:{{arr[0]}}</view>
 <view>对象:{{obj.name}}-{{obj.age}}-{{obj.sex}}</view>
+<!-- 可以使用wx:for遍历数据，item就是被遍历出来的一条条数据，index就是索引值（下标） -->
+<view wx:for="{{objarr}}">index:{{index}}</view>

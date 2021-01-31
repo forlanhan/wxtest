@@ -17,6 +17,7 @@ Page({
         name:'胡瀚',
         age:36,
         sex:"男",
+        //在wx：for中遍历
       objarr:[
         { a:1, b:5,c:9 },
         { a:2, b:6,c:10 },
