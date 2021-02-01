@@ -11,7 +11,9 @@
 <view wx:for="{{objarr}}">index:{{index}}-item:{{item.a}}</view>
 
 <!-- 遍历模拟后台给前端返回的数据 -->
-<view wx:for="{{video}}">
+<view wx:for="{{video.result}}">
       <!--用video标签显示视频  -->
+      <view>视频{{index+1}}</view>
       <video src="{{item.video}}"></video>
 </view>
+
