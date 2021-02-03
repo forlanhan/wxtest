@@ -1,2 +1,12 @@
 <!--pages/com/com.wxml-->
-<text>pages/com/com.wxml</text>
+<!-- icon标签组件 -->
+<icon type="success" size="40"></icon>
+<!-- button -->
+<button type="primary">green</button>
+<button type="warn">red</button>
+<!-- checkbox -->
+<checkbox>男</checkbox>
+<checkbox>女</checkbox>
+<!-- slider -->
+<view>滑动</view>
+<slider backgroundColor="orange" activeColor="skyblue"></slider>
