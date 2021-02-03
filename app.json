@@ -6,14 +6,22 @@
   ],
 
   "tabBar": {
+    "backgroundColor": "#ffffff",
+    "selectedColor": "#fc5531",
     "list": [
       {"pagePath": "pages/first/first",
+        "iconPath": "./images/new.png",
+        "selectedIconPath": "./images/new1.png",
       "text": "新建"
     },
       {"pagePath":"pages/index/index",
+        "iconPath": "./images/home.png",
+        "selectedIconPath": "./images/home1.png",
       "text":"首页"
     },
       {"pagePath": "pages/logs/logs",
+        "iconPath": "./images/log.png",
+        "selectedIconPath": "./images/log1.png",
       "text": "日志"
     }
     ]
