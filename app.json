@@ -2,6 +2,7 @@
   "pages":[
     "pages/first/first",
     "pages/index/index",
+    "pages/com/com",
     "pages/logs/logs"
   ],
 
@@ -19,6 +20,13 @@
         "selectedIconPath": "./images/home1.png",
       "text":"首页"
     },
+    {
+      "pagePath": "pages/com/com",
+      "iconPath": "./images/component.png",
+      "selectedIconPath": "./images/component1.png",
+      "text": "标签"
+    },
+
       {"pagePath": "pages/logs/logs",
         "iconPath": "./images/log.png",
         "selectedIconPath": "./images/log1.png",
