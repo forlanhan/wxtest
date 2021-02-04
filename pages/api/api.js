@@ -6,7 +6,30 @@ Page({
    */
   data: {
 
+     arrname:[
+       {name:"张一山"},
+       {name:"吴亦凡"},
+       {name:"张艺兴"},
+       {name:"胡瀚"},
+       {name:"蔡徐坤"},
+       {name:"陆一鸣"},
+       {name:"聂小倩"},
+       {name:"关一刀"},
+       {name:"诸葛亮"},
+     ]
   },
+  //随机获取arrname人名
+  getname:function(){
+    //定时器：每过？毫秒之后自动执行一次
+     setInterval(function(){
+         //通过下标获得名字  
+    //如何获取特定区间数字
+    //例如：[0-8]-[66-77] - random
+    //取特定区间的数字Math.random()*(max - min) +min
+    var num = parseInt(Math.random(num) * (9-0))+0
+    console.log(num)
+    },500)
+    },
    //获取系统信息
   getinfo:function(){
    wx.getSystemInfo({
