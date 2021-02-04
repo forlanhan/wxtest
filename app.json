@@ -3,6 +3,7 @@
     "pages/first/first",
     "pages/index/index",
     "pages/com/com",
+    "pages/api/api",
     "pages/logs/logs"
   ],
 
@@ -25,6 +26,12 @@
       "iconPath": "./images/component.png",
       "selectedIconPath": "./images/component1.png",
       "text": "标签"
+    },
+    {
+      "pagePath": "pages/api/api",
+      "iconPath": "./images/API.png",
+      "selectedIconPath": "./images/API1.png",
+      "text": "API"
     },
 
       {"pagePath": "pages/logs/logs",

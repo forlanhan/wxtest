@@ -1,0 +1,3 @@
+<!--pages/api/api.wxml-->
+<button type="submit">常用API演示</button>
+<button bindtap="getinfo">获取系统信息</button>

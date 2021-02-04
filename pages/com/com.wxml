@@ -1,5 +1,6 @@
 <!--pages/com/com.wxml-->
 <!-- icon标签组件 -->
+
 <icon type="success" size="40"></icon>
 <!-- button -->
 <button type="primary">green</button>
@@ -10,3 +11,4 @@
 <!-- slider -->
 <view>滑动</view>
 <slider backgroundColor="orange" activeColor="skyblue"></slider>
+
