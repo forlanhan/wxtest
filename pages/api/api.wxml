@@ -4,3 +4,6 @@
 <button bindtap="getname" style="margin-top">
     {{selectName == ''?'点名册':selectName}}
  </button>
+ <view wx:for="{{arrName}}" class="{{arrName[aaa].name == item.name?'active name':'name'}}" wx:key="*this">
+     <view >{{item.name}}</view>
+ </view>

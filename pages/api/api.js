@@ -17,36 +17,40 @@ Page({
        {name:"聂小倩"},
        {name:"关一刀"},
        {name:"诸葛亮"},
-     ]
+     ],
+    aaa:0
   },
   //随机获取arrname人名
   getname:function(){
     //定义记录执行定时器的变量
     var index = 0 
-    //定时器：每过？毫秒之后自动执行一次
-    that.data.timer = setInterval(function(){
     //欲用定时器，先清除定时器
     clearInterval(that.data.timer)
-    index++
-    //通过下标获得名字  
-    //如何获取特定区间数字
-    //例如：[0-8]-[66-77] - random
-    //取特定区间的数字Math.random()*(max - min) +min
-    var num = parseInt(Math.random(num) * (9-0))+0
-    //console.log(num)
-    console.log(that.data.arrName[num].name)
-    //data数据一改变，页面会更新渲染
-    //下面的赋值方式不能引起页面的重新渲染
-    //that.selectName = that.data.arrName[num].name
-    //修改数据，用this.setdata({})
+    //定时器：每过？毫秒之后自动执行一次
     that.setData({
-      selectName:that.data.arrName[num].name
+      timer:setInterval(function(){
+        index++
+        //通过下标获得名字  
+        //如何获取特定区间数字
+        //例如：[0-8]-[66-77] - random
+        //取特定区间的数字Math.random()*(max - min) +min
+        var num = parseInt(Math.random(num) * (9-0))+0
+        //console.log(num)
+        console.log(that.data.arrName[num].name)
+        //data数据一改变，页面会更新渲染
+        //下面的赋值方式不能引起页面的重新渲染
+        //that.selectName = that.data.arrName[num].name
+        //修改数据，用this.setdata({})
+        that.setData({
+          selectName:that.data.arrName[num].name,
+          aaa:num
+        })
+        //如果定时器执行的次数大于10，就暂停
+        if(index >= 10){
+          clearInterval(that.data.timer)
+        }
+        },500)
     })
-    //如果定时器执行的次数大于10，就暂停
-    if(index >= 10){
-      clearInterval(that.data.timer)
-    }
-    },500)
     },
    //获取系统信息
   getinfo:function(){

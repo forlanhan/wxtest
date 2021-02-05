@@ -1,1 +1,15 @@
 /* pages/api/api.wxss */
+.name {
+  display: inline-block;
+  width: 200rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+  margin: 22rpx;
+  border: 1rpx solid #e5e5e5;
+}
+
+.name.active{
+  background:orange;
+  color: white;
+}
