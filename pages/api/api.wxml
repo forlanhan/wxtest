@@ -2,5 +2,5 @@
 <button type="submit">常用API演示</button>
 <button bindtap="getinfo">获取系统信息</button>
 <button bindtap="getname" style="margin-top">
-    {{selectname == ''?'点名册':selectname}}
+    {{selectName == ''?'点名册':selectName}}
  </button>

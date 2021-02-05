@@ -6,8 +6,8 @@ Page({
    */
   data: {
 
-     selectname:'',
-     arrname:[
+     selectName:'',
+     arrName:[
        {name:"张一山"},
        {name:"吴亦凡"},
        {name:"张艺兴"},
@@ -29,11 +29,13 @@ Page({
     //取特定区间的数字Math.random()*(max - min) +min
     var num = parseInt(Math.random(num) * (9-0))+0
     //console.log(num)
-    console.log(that.data.arrname[num].name)
+    console.log(that.data.arrName[num].name)
     //data数据一改变，页面会更新渲染
+    //下面的赋值方式不能引起页面的重新渲染
+    //that.selectName = that.data.arrName[num].name
     //修改数据，用this.setdata({})
     that.setData({
-      selectname:that.data.arrname[num].name
+      selectName:that.data.arrName[num].name
     })
     },500)
     },
