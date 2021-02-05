@@ -1,6 +1,6 @@
 // pages/api/api.js
+var that
 Page({
-
   /**
    * 页面的初始数据
    */
@@ -27,7 +27,8 @@ Page({
     //例如：[0-8]-[66-77] - random
     //取特定区间的数字Math.random()*(max - min) +min
     var num = parseInt(Math.random(num) * (9-0))+0
-    console.log(num)
+    //console.log(num)
+    console.log(that.data.arrname[num].name)
     },500)
     },
    //获取系统信息
@@ -45,6 +46,8 @@ Page({
    */
   onLoad: function (options) {
     //调用函数
+    //让that指向this
+    that =  this
     //知识补充：this - 这里的this是指向js的page函数（当前页面函数）
    // console.log(this.getinfo)
     //执行函数
