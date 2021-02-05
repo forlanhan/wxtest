@@ -21,9 +21,14 @@ Page({
   },
   //随机获取arrname人名
   getname:function(){
+    //定义记录执行定时器的变量
+    var index = 0 
     //定时器：每过？毫秒之后自动执行一次
-     setInterval(function(){
-         //通过下标获得名字  
+    var timer =  setInterval(function(){
+    //欲用定时器，先清除定时器
+    clearInterval(timer)
+    index++
+    //通过下标获得名字  
     //如何获取特定区间数字
     //例如：[0-8]-[66-77] - random
     //取特定区间的数字Math.random()*(max - min) +min
@@ -37,6 +42,10 @@ Page({
     that.setData({
       selectName:that.data.arrName[num].name
     })
+    //如果定时器执行的次数大于10，就暂停
+    if(index >= 10){
+      clearInterval(timer)
+    }
     },500)
     },
    //获取系统信息
