@@ -6,6 +6,7 @@ Page({
    */
   data: {
 
+     selectname:'',
      arrname:[
        {name:"张一山"},
        {name:"吴亦凡"},
@@ -29,6 +30,11 @@ Page({
     var num = parseInt(Math.random(num) * (9-0))+0
     //console.log(num)
     console.log(that.data.arrname[num].name)
+    //data数据一改变，页面会更新渲染
+    //修改数据，用this.setdata({})
+    that.setData({
+      selectname:that.data.arrname[num].name
+    })
     },500)
     },
    //获取系统信息
