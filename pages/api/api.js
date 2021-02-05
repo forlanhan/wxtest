@@ -5,8 +5,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-
      selectName:'',
+     timer:null,
      arrName:[
        {name:"张一山"},
        {name:"吴亦凡"},
@@ -24,9 +24,9 @@ Page({
     //定义记录执行定时器的变量
     var index = 0 
     //定时器：每过？毫秒之后自动执行一次
-    var timer =  setInterval(function(){
+    that.data.timer = setInterval(function(){
     //欲用定时器，先清除定时器
-    clearInterval(timer)
+    clearInterval(that.data.timer)
     index++
     //通过下标获得名字  
     //如何获取特定区间数字
@@ -44,7 +44,7 @@ Page({
     })
     //如果定时器执行的次数大于10，就暂停
     if(index >= 10){
-      clearInterval(timer)
+      clearInterval(that.data.timer)
     }
     },500)
     },
