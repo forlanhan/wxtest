@@ -52,15 +52,43 @@ Page({
         },500)
     })
     },
+    
    //获取系统信息
   getinfo:function(){
-   wx.getSystemInfo({
-    success: (res) => {
-      console.log(res)
-    },
-    fail: (res) => {},
-    complete: (res) => {},
-  })
+    /*  wx.getSystemInfo({
+      success: (res) => {
+        console.log(res)
+      },
+      fail: (res) => {},
+      complete: (res) => {},
+    })
+ */
+  //页面交互的API
+  //用在向后台请求数据，但是数据可能由于网络或者页面未渲染时显示
+  /*   wx.showLoading({
+      title: '加载中',
+      mask: true,
+      success: (res) => {},
+      fail: (res) => {},
+      complete: (res) => {},
+    }) */
+    //假如数据2s后请求到，让加载消失
+  /*   setTimeout(function () {
+     wx.hideLoading({
+       success: (res) => {},
+       fail: (res) => {},
+       complete: (res) => {},
+     })
+    }, 2000) */
+  //showModal
+    wx.showModal({
+      content: '是否放入购物车',
+      showCancel: true,
+      title: '购物车',
+      success: (result) => {},
+      fail: (res) => {},
+      complete: (res) => {},
+    })
   },
   /**
    * 生命周期函数--监听页面加载
