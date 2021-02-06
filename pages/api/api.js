@@ -54,7 +54,8 @@ Page({
     },
     
    //获取系统信息
-  getinfo:function(){
+  getinfo:function(e){
+    console.log(e.target.dataset.index)
     /*  wx.getSystemInfo({
       success: (res) => {
         console.log(res)
@@ -81,14 +82,14 @@ Page({
      })
     }, 2000) */
   //showModal
-    wx.showModal({
+/*     wx.showModal({
       content: '是否放入购物车',
       showCancel: true,
       title: '购物车',
       success: (result) => {},
       fail: (res) => {},
       complete: (res) => {},
-    })
+    }) */
   },
   /**
    * 生命周期函数--监听页面加载
