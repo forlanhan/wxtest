@@ -8,6 +8,6 @@
      (1)js文件里面的data变化，可以直接引起页面渲染
      (2)小程序不像前端那样有dom操作
   -->
- <view wx:for="{{arrName}}" class="{{arrName[aaa].name == item.name?'active name':'name'}}" wx:key="*this">
+ <view wx:for="{{arrName}}" class="{{selectName == item.name?'active name':'name'}}" wx:key="*this" bindtap="getinfo"   data-aaa="{{index}}">
      <view >{{item.name}}</view>
  </view>    

@@ -55,7 +55,8 @@ Page({
     
    //获取系统信息
   getinfo:function(e){
-    console.log(e.target.dataset.index)
+    console.log(e)
+    console.log(e.currentTarget.dataset.aaa)
     /*  wx.getSystemInfo({
       success: (res) => {
         console.log(res)

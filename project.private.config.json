@@ -21,6 +21,12 @@
         {
           "name": "pages/api/api",
           "pathName": "pages/api/api",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/detail/detail",
+          "pathName": "pages/detail/detail",
           "scene": null
         }
       ]
