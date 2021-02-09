@@ -19,3 +19,5 @@
 <button bindtap="setStorage">本地缓存-存数据</button>
 
 <button bindtap="getStroage">本地缓存-取数据</button>
+<button bindtap="reMove">移除数据-单个</button>
+<button bindtap="del">删除数据-全部</button>

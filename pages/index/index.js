@@ -78,6 +78,27 @@ Page({
       complete: (res) => {},
     })
   },
+  //移除数据-单个
+  reMove(){
+    wx.removeStorage({
+      key: 'list',
+      success: (res) => {
+        console.log(res)
+      },
+      fail: (res) => {},
+      complete: (res) => {},
+    })
+  },
+  //删除数据-全部
+  del(){
+    wx.clearStorage({
+      success: (res) => {
+      console.log(res)
+      },
+      fail: (res) => {},
+      complete: (res) => {},
+    })
+  },
   // 事件处理函数
   bindViewTap() {
     wx.navigateTo({
