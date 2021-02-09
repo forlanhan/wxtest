@@ -52,6 +52,8 @@ Page({
         },500)
     })
     },
+
+
     
    //获取系统信息
   getinfo:function(e){
@@ -92,6 +94,8 @@ Page({
       complete: (res) => {},
     }) */
   },
+
+
   /**
    * 生命周期函数--监听页面加载
    */
@@ -103,6 +107,7 @@ Page({
    // console.log(this.getinfo)
     //执行函数
     //this.getinfo()
+
   },
 
   /**

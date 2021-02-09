@@ -63,6 +63,21 @@ Page({
       },
     })
   },
+  //本地缓存-存数据
+  setStorage:function(){
+    wx.setStorageSync('list', [1,2,3,4,5,6])
+  },
+  //本地缓存-取数据
+  getStroage(){
+    wx.getStorage({
+      key: 'list',
+      success: (res) => {
+        console.log(res)
+      },
+      fail: (res) => {},
+      complete: (res) => {},
+    })
+  },
   // 事件处理函数
   bindViewTap() {
     wx.navigateTo({

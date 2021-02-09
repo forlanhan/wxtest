@@ -56,6 +56,12 @@
         {
           "name": "pages/api/api",
           "pathName": "pages/api/api",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/index/index",
+          "pathName": "pages/index/index",
           "scene": null
         }
       ]

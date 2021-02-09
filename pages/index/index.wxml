@@ -16,3 +16,6 @@
 <button bindtap="reLaunch">reLaunch</button>
 <button bindtap="navigatorTO">navigatorTO</button>
 <navigator url="/pages/detail/detail?name='huhan'&age=33">navigator标签页跳转</navigator>
+<button bindtap="setStorage">本地缓存-存数据</button>
+
+<button bindtap="getStroage">本地缓存-取数据</button>
