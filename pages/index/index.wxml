@@ -21,3 +21,7 @@
 <button bindtap="getStroage">本地缓存-取数据</button>
 <button bindtap="reMove">移除数据-单个</button>
 <button bindtap="del">删除数据-全部</button>
+<!-- 渲染数据 -->
+<view wx:for="{{storage}}">本地数据:{{item}}</view>
+<!-- 请求数据 -->
+<button style="margin-top:40px" bindtap="getData">请求数据</button>

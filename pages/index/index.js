@@ -73,6 +73,10 @@ Page({
       key: 'list',
       success: (res) => {
         console.log(res)
+  //取出数据后，赋值给本地变量，渲染在页面上
+        this.setData({
+          storage:res.data
+        })
       },
       fail: (res) => {},
       complete: (res) => {},
@@ -94,6 +98,18 @@ Page({
     wx.clearStorage({
       success: (res) => {
       console.log(res)
+      },
+      fail: (res) => {},
+      complete: (res) => {},
+    })
+  },
+  //请求数据
+  getData(){
+    wx.request({
+      url: 'https://api.apiopen.top/getWangYiNews',
+      timeout: 0,
+      success: (res) => {
+        console.log(res)
       },
       fail: (res) => {},
       complete: (res) => {},
