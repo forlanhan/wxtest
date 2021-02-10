@@ -24,4 +24,4 @@
 <!-- 渲染数据 -->
 <view wx:for="{{storage}}">本地数据:{{item}}</view>
 <!-- 请求数据 -->
-<button style="margin-top:40px" bindtap="getData">请求数据</button>
+<button style="margin-top:40px" bindtap="getData" data-count="4">请求数据</button>

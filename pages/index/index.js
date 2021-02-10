@@ -104,9 +104,14 @@ Page({
     })
   },
   //请求数据
-  getData(){
+  getData(e){
     wx.request({
-      url: 'https://api.apiopen.top/getWangYiNews',
+      url: 'http://poetry.apiopen.top/poetryFull?',
+      data:{
+        //参数意义可以让页面变得更灵活
+        count:e.target.dataset.count,
+        page:2
+      },
       timeout: 0,
       success: (res) => {
         console.log(res)
